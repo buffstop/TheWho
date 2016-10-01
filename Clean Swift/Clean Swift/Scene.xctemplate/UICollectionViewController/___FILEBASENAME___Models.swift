@@ -15,18 +15,21 @@ import UIKit
 struct ___FILEBASENAMEASIDENTIFIER___Scene {
     
     /* Example Model from code snippet
-    struct <#Use Case#> {
-        
-        struct Request {
+    struct ___FILEBASENAMEASIDENTIFIER___
+    {
+        struct <#Use Case#> {
             
-        }
-        
-        struct Response {
+            struct Request {
+                
+            }
             
-        }
-        
-        struct ViewModel {
+            struct Response {
+                
+            }
             
+            struct ViewModel {
+                
+            }
         }
     }
  */
