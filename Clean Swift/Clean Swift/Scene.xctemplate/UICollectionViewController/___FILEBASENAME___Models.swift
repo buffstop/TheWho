@@ -13,10 +13,7 @@ import UIKit
 
 
 struct ___FILEBASENAMEASIDENTIFIER___Scene {
-    
-    
-    struct ___FILEBASENAMEASIDENTIFIER___
-    {
+
         /* Example Model
         struct <#Use Case#> {
             
@@ -40,8 +37,4 @@ struct ___FILEBASENAMEASIDENTIFIER___Scene {
             }
         }
         */
-    }
-    
-    
-    
 }
