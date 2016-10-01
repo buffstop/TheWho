@@ -14,9 +14,10 @@ import UIKit
 
 struct ___FILEBASENAMEASIDENTIFIER___Scene {
     
-    /* Example Model from code snippet
+    
     struct ___FILEBASENAMEASIDENTIFIER___
     {
+        /* Example Model
         struct <#Use Case#> {
             
             struct Request {
@@ -27,11 +28,20 @@ struct ___FILEBASENAMEASIDENTIFIER___Scene {
                 
             }
             
-            struct ViewModel {
-                
+            struct ViewModel
+            {
+                struct Displayed<#MyModel#>
+                {
+                //var id: String
+                //var date: String
+                // ...
+                }
+                var displayed<#MyModel#>s: [Displayed<#MyModel#>]
             }
         }
+        */
     }
- */
+    
+    
     
 }
