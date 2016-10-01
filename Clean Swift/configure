@@ -1,0 +1,54 @@
+#!/bin/bash
+
+view="UIViewController"
+table="UITableViewController"
+collection="UICollectionViewController"
+TEMPLATES_DIR=Clean\ Swift
+
+#Clean /Scene.xctemplate
+rm -rf ${TEMPLATES_DIR}/Scene.xctemplate/$view
+rm -rf ${TEMPLATES_DIR}/Scene.xctemplate/$table
+rm -rf ${TEMPLATES_DIR}/Scene.xctemplate/$collection
+
+# Copy ViewControllers to Scene.xctemplate
+cp -rf ${TEMPLATES_DIR}/View\ Controller.xctemplate/$view ${TEMPLATES_DIR}/Scene.xctemplate
+cp -rf ${TEMPLATES_DIR}/View\ Controller.xctemplate/$table ${TEMPLATES_DIR}/Scene.xctemplate
+cp -rf ${TEMPLATES_DIR}/View\ Controller.xctemplate/$collection ${TEMPLATES_DIR}/Scene.xctemplate
+
+# Copy .swift files to $view, $table, $collection
+## Configurator.xctemplate
+config="Configurator.xctemplate"
+configFile="___FILEBASENAME___Configurator.swift"
+cp ${TEMPLATES_DIR}/$config/$configFile ${TEMPLATES_DIR}/Scene.xctemplate/$view
+cp ${TEMPLATES_DIR}/$config/$configFile ${TEMPLATES_DIR}/Scene.xctemplate/$table
+cp ${TEMPLATES_DIR}/$config/$configFile ${TEMPLATES_DIR}/Scene.xctemplate/$collection
+
+## Interactor.xctemplate
+int="Interactor.xctemplate"
+intFile="___FILEBASENAME___Interactor.swift"
+cp ${TEMPLATES_DIR}/$int/$intFile ${TEMPLATES_DIR}/Scene.xctemplate/$view
+cp ${TEMPLATES_DIR}/$int/$intFile ${TEMPLATES_DIR}/Scene.xctemplate/$table
+cp ${TEMPLATES_DIR}/$int/$intFile ${TEMPLATES_DIR}/Scene.xctemplate/$collection
+
+## Models.xctemplate
+model="Models.xctemplate"
+modelFile="___FILEBASENAME___Models.swift"
+cp ${TEMPLATES_DIR}/$model/$modelFile ${TEMPLATES_DIR}/Scene.xctemplate/$view
+cp ${TEMPLATES_DIR}/$model/$modelFile ${TEMPLATES_DIR}/Scene.xctemplate/$table
+cp ${TEMPLATES_DIR}/$model/$modelFile ${TEMPLATES_DIR}/Scene.xctemplate/$collection
+ 
+## Presenter.xctemplate
+pres="Presenter.xctemplate"
+presFile="___FILEBASENAME___Presenter.swift"
+cp ${TEMPLATES_DIR}/$pres/$presFile ${TEMPLATES_DIR}/Scene.xctemplate/$view
+cp ${TEMPLATES_DIR}/$pres/$presFile ${TEMPLATES_DIR}/Scene.xctemplate/$table
+cp ${TEMPLATES_DIR}/$pres/$presFile ${TEMPLATES_DIR}/Scene.xctemplate/$collection
+ 
+## Router.xctemplate
+router="Router.xctemplate"
+routerFile="___FILEBASENAME___Router.swift"
+cp ${TEMPLATES_DIR}/$router/$routerFile ${TEMPLATES_DIR}/Scene.xctemplate/$view
+cp ${TEMPLATES_DIR}/$router/$routerFile ${TEMPLATES_DIR}/Scene.xctemplate/$table
+cp ${TEMPLATES_DIR}/$router/$routerFile ${TEMPLATES_DIR}/Scene.xctemplate/$collection
+ 
+
