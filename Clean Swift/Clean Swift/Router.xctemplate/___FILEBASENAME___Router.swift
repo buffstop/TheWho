@@ -34,9 +34,9 @@ class ___FILEBASENAMEASIDENTIFIER___Router: ___FILEBASENAMEASIDENTIFIER___DataTr
         self.dataDestination = dataDestination
     }
     
-    // MARK: Navigation
+    // MARK: - NAVIGATION
     
-    // MARK: Communication
+    // MARK: COMMUNICATION
     
     func passDataToNextScene(segue: UIStoryboardSegue) {
         // NOTE: Teach the router which scenes it can communicate with

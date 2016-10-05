@@ -18,6 +18,6 @@ class ___FILEBASENAMEASIDENTIFIER___Presenter: ___FILEBASENAMEASIDENTIFIER___Dat
     
     weak var output: ___FILEBASENAMEASIDENTIFIER___DataTransferInterfaceView!
     
-    // MARK: Presentation logic
+    // MARK: - PRESENTATION LOGIC
     
 }

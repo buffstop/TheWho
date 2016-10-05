@@ -18,6 +18,6 @@ class ___FILEBASENAMEASIDENTIFIER___Interactor: ___FILEBASENAMEASIDENTIFIER___Da
     
     var output: ___FILEBASENAMEASIDENTIFIER___DataTransferInterfacePresenter!
     
-    // MARK: Business logic
+    // MARK: - BUSINESS LOGIC
 
 }

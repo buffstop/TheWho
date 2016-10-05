@@ -25,13 +25,13 @@ class ___FILEBASENAMEASIDENTIFIER___Worker {
         self.store = store
     }
     
-    // MARK: Business Logic
+    // MARK: BUSINESS LOGIC
     
 }
 
-// MARK: - ___FILEBASENAMEASIDENTIFIER___ store CRUD operation results
+// MARK: - ___FILEBASENAMEASIDENTIFIER___ STORE OPERATION RESULTS
 
-// MARK: completionhandler
+// MARK: Completionhandler
 
 //Examples:
 //typealias ___FILEBASENAMEASIDENTIFIER___StoreFetchEmojisCompletionHandler = (_ result: ___FILEBASENAMEASIDENTIFIER___StoreResult<[Emoji]>) -> Void
@@ -40,13 +40,14 @@ class ___FILEBASENAMEASIDENTIFIER___Worker {
 //typealias ___FILEBASENAMEASIDENTIFIER___StoreUpdateOrderCompletionHandler = (result: ___FILEBASENAMEASIDENTIFIER___StoreResult<Void>) -> Void
 //typealias ___FILEBASENAMEASIDENTIFIER___StoreDeleteOrderCompletionHandler = (result: ___FILEBASENAMEASIDENTIFIER___StoreResult<Void>) -> Void
 
+// MARK: Results
 enum ___FILEBASENAMEASIDENTIFIER___StoreResult<U>
 {
     case Success(result: U)
     case Failure(error: EmojiStoreError)
 }
 
-// MARK: CRUD operation errors
+// MARK: Errors
 
 enum ___FILEBASENAMEASIDENTIFIER___StoreError: Equatable, Error
 {
