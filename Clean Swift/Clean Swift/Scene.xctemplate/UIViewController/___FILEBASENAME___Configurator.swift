@@ -13,11 +13,13 @@ import UIKit
 // MARK: Connect View, Interactor, and Presenter
 
 class ___FILEBASENAMEASIDENTIFIER___Configurator {
-    // MARK: Object lifecycle
+    // MARK: - LIFE CYCLE
     
     static let sharedInstance = ___FILEBASENAMEASIDENTIFIER___Configurator()
     
-    // MARK: Configuration
+    private init() {} //Signgleton class. Prevents others from using the default '()'
+    
+    // MARK: - CONFIGURATION
     
     func configure(viewController: ___FILEBASENAMEASIDENTIFIER___ViewController) {
         
@@ -32,7 +34,11 @@ class ___FILEBASENAMEASIDENTIFIER___Configurator {
         viewController.output = interactor
         viewController.router = router
     }
-    
-    // MARK: lifecycle
-    private init() {} //Signgleton class. Prevents others from using the default '()'
+}
+
+//TODO: delte this comment and the commented code in ViewController when proven working
+extension ___FILEBASENAMEASIDENTIFIER___ViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        router.passDataToNextScene(segue: segue)
+    }
 }

@@ -34,7 +34,11 @@ class ___FILEBASENAMEASIDENTIFIER___Configurator {
         viewController.output = interactor
         viewController.router = router
     }
-    
-    // MARK: lifecycle
-    private init() {} //Signgleton class. Prevents others from using the default '()'
+}
+
+//TODO: delte this comment and the commented code in ViewController when proven working
+extension ___FILEBASENAMEASIDENTIFIER___ViewController {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        router.passDataToNextScene(segue: segue)
+    }
 }
