@@ -44,7 +44,7 @@ class ___FILEBASENAMEASIDENTIFIER___Worker {
 enum ___FILEBASENAMEASIDENTIFIER___StoreResult<U>
 {
     case Success(result: U)
-    case Failure(error: EmojiStoreError)
+    case Failure(error: ___FILEBASENAMEASIDENTIFIER___StoreError)
 }
 
 // MARK: Errors
