@@ -33,6 +33,11 @@ class ___FILEBASENAMEASIDENTIFIER___Configurator {
         
         viewController.output = interactor
         viewController.router = router
+        
+        // force lazy initialization of view (and subviews), which would be nil otherwize in awaikFromNib
+        _ = viewController.view
+        
+        // do further configuration here (add child view controller, set delegates ...) 
     }
 }
 
