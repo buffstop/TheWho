@@ -15,7 +15,7 @@ protocol ___FILEBASENAMEASIDENTIFIER___DataTransferInterfaceView:class {
 }
 
 class ___FILEBASENAMEASIDENTIFIER___ViewController: UIViewController, ___FILEBASENAMEASIDENTIFIER___DataTransferInterfaceView {
-    
+    static let storyboardIdentifier = "___FILEBASENAMEASIDENTIFIER___ViewController"
     var output: ___FILEBASENAMEASIDENTIFIER___DataTransferInterfaceInteractor!
     var router: ___FILEBASENAMEASIDENTIFIER___Router!
     
